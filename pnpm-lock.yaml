@@ -1,0 +1,41 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  jquery:
+    specifier: ^3.7.1
+    version: 3.7.1
+  jquery-easy-loading:
+    specifier: 2.0.0-rc.2
+    version: 2.0.0-rc.2(jquery@3.7.1)
+  moment:
+    specifier: ^2.30.1
+    version: 2.30.1
+  sweetalert2:
+    specifier: ^11.10.6
+    version: 11.10.6
+
+packages:
+
+  /jquery-easy-loading@2.0.0-rc.2(jquery@3.7.1):
+    resolution: {integrity: sha512-onWOmVz81OIK/DS0Z5aZiYfcPdwv7RX2N31kC8VJqY5UV0Sxe0kkl+Tlv1Fa1GaGnh4Px7WA9nbWcMfnNKLb6A==}
+    peerDependencies:
+      jquery: '>=1.7'
+    dependencies:
+      jquery: 3.7.1
+    dev: false
+
+  /jquery@3.7.1:
+    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
+    dev: false
+
+  /moment@2.30.1:
+    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
+    dev: false
+
+  /sweetalert2@11.10.6:
+    resolution: {integrity: sha512-CINZPLZXZRSZqSOE7H7j1F7X8e8O1kLOiXPmtJn1DYxvXsKBr3d16d90+IcwTTs7dJww20h8r8QIxIwsLGX+6A==}
+    dev: false
