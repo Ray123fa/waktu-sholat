@@ -37,8 +37,8 @@
 	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	<script>
 		function reset() {
-			document.cookie = "latitude=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-			document.cookie = "longitude=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+			localStorage.removeItem('latitude');
+			localStorage.removeItem('longitude');
 
 			map.removeLayer(marker);
 			getUserLocation();
@@ -48,8 +48,8 @@
 			var latitude = document.getElementById('latitude').textContent;
 			var longitude = document.getElementById('longitude').textContent;
 
-			document.cookie = "latitude=" + latitude;
-			document.cookie = "longitude=" + longitude;
+			localStorage.setItem('latitude', latitude);
+			localStorage.setItem('longitude', longitude);
 
 			window.location.href = '/';
 		}
