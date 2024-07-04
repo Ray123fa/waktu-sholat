@@ -122,7 +122,8 @@
 		}
 
 		if (document.cookie) {
-			const [lat, long] = document.cookie.split(";").map((item) => item.split("=")[1]);
+			var lat = localStorage.getItem('latitude');
+			var long = localStorage.getItem('longitude');
 			showPosition(null, lat, long);
 		} else {
 			getUserLocation();
