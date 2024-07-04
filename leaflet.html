@@ -121,7 +121,7 @@
 			}
 		}
 
-		if (document.cookie) {
+		if (localStorage.getItem('latitude') && localStorage.getItem('longitude')) {
 			var lat = localStorage.getItem('latitude');
 			var long = localStorage.getItem('longitude');
 			showPosition(null, lat, long);
